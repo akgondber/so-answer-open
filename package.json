@@ -1,0 +1,48 @@
+{
+  "name": "so-answer-open",
+  "version": "1.0.0",
+  "desciption": "Open stackoverflow link by category and key phrase using fuzzy search from registered links",
+  "license": "MIT",
+  "author": "Rushan Alyautdinov <akgondber@gmail.com>",
+  "homepage": "https://github.com/akgondber/so-answer-open",
+  "repository": "akgondber/so-answer-open",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "bin": {
+    "so-answer-open": "node cli.js",
+    "soans": "node cli.js",
+    "soanswer": "node cli.js"
+  },
+  "scripts": {
+    "dev": "node src/cli.js",
+    "format": "prettier --write .",
+    "lintmd": "node scripts/lintmd.js",
+    "test": "vitest",
+    "test:stats": "vitest --reporter=json --outputFile=./tmp/test-output.json"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "fastest-levenshtein": "^1.0.16",
+    "fuse.js": "^7.0.0",
+    "magicast": "^0.3.2",
+    "open": "^9.1.0",
+    "ramda": "^0.29.1",
+    "random-item": "^4.0.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "prettier": "^3.2.5",
+    "remark": "^15.0.1",
+    "remark-code-blocks": "^2.0.1",
+    "remark-license": "^6.1.0",
+    "remark-preset-lint-consistent": "^6.0.0",
+    "remark-preset-lint-recommended": "^7.0.0",
+    "remark-stringify": "^11.0.0",
+    "to-vfile": "^8.0.0",
+    "vfile-reporter": "^8.1.1",
+    "vitest": "^1.6.0"
+  },
+  "packageManager": "yarn@3.5.1"
+}
