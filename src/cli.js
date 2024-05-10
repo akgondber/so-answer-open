@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { intro, outro, text, select } from "@clack/prompts";
 import Fuse from "fuse.js";
 import open from "open";

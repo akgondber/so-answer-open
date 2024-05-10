@@ -89,21 +89,22 @@ const links = [
         ]
     },
     {
-        url: 'https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit',
-        title: 'How do I undo \'git add\' before commit?',
-        tags: [
-            'git',
-            'undo',
-            'git-add'
-        ]
-    },
-    {
         url: 'https://stackoverflow.com/questions/1274057/how-do-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore',
         title: 'How do I make Git forget about a file that was tracked, but is now in .gitignore?',
         tags: [
             'git',
             'gitignore',
             'git-rm'
+        ]
+    },
+    {
+        url: 'https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages',
+        title: 'How to modify existing, unpushed commit messages?',
+        tags: [
+            'git',
+            'git-commit',
+            'git-rewrite-history',
+            'git-amend'
         ]
     }
 ];
