@@ -45,11 +45,9 @@ const result = fuse.search(subject);
 if (R.isEmpty(result)) {
 	outro("The query have no close from the registered links");
 } else {
-	R.addIndex(R.map)(
-		R.take(3, result),
-	);
+	R.addIndex(R.map)(R.take(3, result));
 	const sorted = R.sortWith([R.descend(R.prop("score"))])(result);
 	const mostScoredLink = questions[sorted[0].refIndex].url;
-  outro(`Opened the url ${mostScoredLink}`);
+	outro(`Opened the url ${mostScoredLink}`);
 	await open(mostScoredLink);
 }
