@@ -48,4 +48,4 @@ links.value().push(`{
 }`);
 const toSave = new MagicString(tree.toString());
 fs.writeFileSync(file, toSave.append(`\n\n${expString}`).toString());
-outro(`New item with url: ${url}  was added.`);
+outro(`New item with url: ${url} was added.`);
