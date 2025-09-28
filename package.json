@@ -1,6 +1,6 @@
 {
   "name": "so-answer-open",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "desciption": "Open stackoverflow link by category and key phrase using fuzzy search from registered links",
   "license": "MIT",
   "author": "Rushan Alyautdinov <akgondber@gmail.com>",
