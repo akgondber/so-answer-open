@@ -22,7 +22,8 @@
     "test": "vitest",
     "test:stats": "vitest --reporter=json --outputFile=./tmp/test-output.json",
     "lar": "node scripts/lar.js",
-    "addurl": "node scripts/addurl.js"
+    "addurl": "node scripts/addurl.js",
+    "bumpp": "bumpp"
   },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "ast-query": "^2.0.0",
+    "bumpp": "^10.2.3",
     "magic-string": "^0.30.10",
     "microbundle": "^0.15.1",
     "prettier": "^3.2.5",
@@ -49,5 +51,16 @@
     "vfile-reporter": "^8.1.1",
     "vitest": "^1.6.0"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.5.1",
+  "keywords": [
+    "stackoverflow",
+    "recipe",
+    "programmingquestion",
+    "question",
+    "howdoit",
+    "solving",
+    "problem",
+    "assistant",
+    "development"
+  ]
 }

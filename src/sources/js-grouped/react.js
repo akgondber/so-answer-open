@@ -17,6 +17,14 @@ const items = [
 		url: "https://stackoverflow.com/questions/53165945/what-is-usestate-in-react",
 		tags: ["usestate"],
 	},
+	{
+		url: "https://stackoverflow.com/questions/31079081/how-can-i-programmatically-navigate-using-react-router",
+		tags: ["route", "programmatically", "navigate"],
+	},
+	{
+		url: "https://stackoverflow.com/questions/32370994/how-to-pass-props-to-this-props-children",
+		tags: ["props", "pass", "children"],
+	},
 ];
 
 const links = buildItems(items, "react");

@@ -18,6 +18,10 @@ const items = [
 		url: "https://stackoverflow.com/questions/75530833/how-to-call-zustand-react-hook-outside-of-react-component",
 		tags: ["zustand", "outside"],
 	},
+	{
+		url: "https://stackoverflow.com/questions/74046364/zustand-get-state-from-another-zustand-store",
+		tags: ["zustand"],
+	},
 ];
 
 const links = buildItems(items, "state");

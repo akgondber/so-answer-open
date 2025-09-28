@@ -1,4 +1,3 @@
-// sum.test.js
 import { expect, test } from "vitest";
 import { buildItems } from "../src/helpers";
 

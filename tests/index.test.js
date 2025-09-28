@@ -1,12 +1,12 @@
 import { expect, test } from "vitest";
 
-const dupUrls = (items) => {
-  const counted = items.reduce((acc, item) => {
-    acc[item.url] ||= 0;
-    acc[item.url]++;
-    return acc;
-  }, {});
-  return Object.keys(counted).filter(item => counted[item] > 1);
+const dupUrls = items => {
+	const counted = items.reduce((acc, item) => {
+		acc[item.url] ||= 0;
+		acc[item.url]++;
+		return acc;
+	}, {});
+	return Object.keys(counted).filter(item => counted[item] > 1);
 };
 
 test("does not have duplicate urls", async () => {
@@ -18,6 +18,9 @@ test("does not have duplicate urls", async () => {
 		const { default: links } = await import(`/src/sources/${category}.js`);
 
 		expect(links).toBeDefined();
-		expect(links).not.toSatisfy(hasDuplicateUrls, `The '${category}' category have duplicate urls: ${dupUrls(links)}.`);
+		expect(links).not.toSatisfy(
+			hasDuplicateUrls,
+			`The '${category}' category have duplicate urls: ${dupUrls(links)}.`,
+		);
 	}
 });
